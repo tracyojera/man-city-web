@@ -1,0 +1,70 @@
+```css
+/* GENERAL PAGE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #111;
+}
+
+
+/* NAVIGATION BAR */
+.city-navbar {
+    background-color: #001838;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #6cabdd !important;
+}
+
+
+/* NEWS HEADER */
+.news-header {
+    background-color: #6cabdd;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* NEWS CARDS */
+.news-card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+}
+
+
+/* CARD IMAGES */
+.news-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* READ MORE BUTTON */
+.city-button {
+    background-color: #6cabdd;
+    color: white;
+    border: none;
+}
+
+.city-button:hover {
+    background-color: #001838;
+}
+
+
+/* FOOTER */
+.city-footer {
+    background-color: #001838;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+```
