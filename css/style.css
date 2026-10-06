@@ -86,3 +86,118 @@ body {
         padding: 40px 0;
     }    
 }
+
+/* ===== About Us page: add this to the bottom of css/style.css ===== */
+
+:root {
+    --city-blue: #6CABDD;
+    --city-navy: #1C2C5B;
+}
+
+.city-navbar {
+    background-color: var(--city-navy);
+}
+.city-navbar .nav-link.active,
+.city-navbar .nav-link:hover {
+    color: var(--city-blue);
+}
+
+/* Hero */
+.about-hero {
+    min-height: 320px;
+    background:
+        linear-gradient(rgba(28, 44, 91, 0.75), rgba(28, 44, 91, 0.75)),
+        url("../images/jonny-gios-rCD5ZCCcIZU-unsplash.jpg") center / cover no-repeat;
+    background-color: #1C2C5B;
+}
+
+/* Headings */
+.section-title {
+    color: var(--city-navy);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--city-blue);
+    margin-top: 8px;
+}
+.text-center.section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards */
+.glance-card {
+    border-top: 5px solid var(--city-blue);
+}
+.value-card {
+    border: none;
+    border-bottom: 4px solid var(--city-blue);
+    transition: transform 0.25s ease;
+}
+.value-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Button */
+.btn-city {
+    background-color: var(--city-blue);
+    color: #fff;
+    border: none;
+}
+.btn-city:hover {
+    background-color: var(--city-navy);
+    color: #fff;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 4px solid var(--city-blue);
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: var(--city-navy);
+    border: 3px solid var(--city-blue);
+    border-radius: 50%;
+}
+.timeline-year {
+    display: inline-block;
+    background: var(--city-navy);
+    color: #fff;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.timeline-content {
+    background: #fff;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.timeline-content h5 {
+    color: var(--city-navy);
+}
+
+/* Footer */
+.city-footer {
+    background-color: var(--city-navy);
+}
