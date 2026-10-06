@@ -1,27 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MANCHESTER-CITY - news</title>
+    <title>Manchester City News</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-   
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">MANCHESTER CITY</a>
+
+            <a class="nav-link text-white" href="#">Home</a>
+            <a class="nav-link text-white" href="#">Team</a>
+            <a class="nav-link text-white" href="#">Fixtures</a>
+            <a class="nav-link text-white" href="#">News</a>
+        </div>
+    </nav>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Page Heading -->
+    <div class="text-center p-5">
+        <h1>Latest Manchester City News</h1>
+        <p>Get the latest news and updates about Manchester City.</p>
+    </div>
 
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+
+    <!-- News Section -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- News 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news1.jpg" class="card-img-top"
+                         alt="Manchester City players">
+
+                    <div class="card-body">
+                        <h5>City Prepare for Their Next Fixture</h5>
+
+                        <p>
+                            Manchester City players are preparing
+                            for their next important match.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                onclick="showNews()">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- News 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news2.jpg" class="card-img-top"
+                         alt="Manchester City training">
+
+                    <div class="card-body">
+                        <h5>Players Return to Training</h5>
+
+                        <p>
+                            The players have returned to training
+                            and are preparing for the next challenge.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                onclick="showNews()">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- News 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/news3.jpg" class="card-img-top"
+                         alt="Manchester City supporters">
+
+                    <div class="card-body">
+                        <h5>Fans Continue to Support City</h5>
+
+                        <p>
+                            Manchester City supporters continue
+                            to show their passion for the club.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                onclick="showNews()">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>MANCHESTER CITY</p>
+        <p>© 2026 Manchester City News</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function showNews() {
+            alert("Full Manchester City news coming soon!");
+        }
+
+    </script><!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
 </body>
 </html>
