@@ -9,6 +9,7 @@ function showNews() {
 ```
 console.log("Our Football Club website loaded successfully.");
 
+
 /* ---------- Login form (#loginForm, #email, #password, #loginMessage) ---------- */
 const loginForm = document.getElementById("loginForm");
 
