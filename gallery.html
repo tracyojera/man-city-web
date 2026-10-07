@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,7 +93,19 @@
   <span style="color:gray; font-size:13px;">6 items • Updated Oct 2024</span>
 </div>
 
+ <nav class="navbar">
+        <div class="container">
 
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">The team</a>
+                <a href="fixtures.html">Fixtures</a>
+                <a href="news.html">News</a>
+                <a href="about-us.html"><about-us>About Us</about-us></a>
+            </div>
+
+        </div>
+    </nav>
 <div class="grid">
 
   <a href="team-details.html" style="text-decoration:none;">
@@ -136,3 +149,155 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANCHESTER-CITY - about us</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<head>
+<style>
+  body{margin:0; font-family:sans-serif; background: linear-gradient(#A7D2EF, #fff);}
+  .header{background:#001838; color:white; padding:15px 40px; display:flex; justify-content:space-between; align-items:center;}
+  .hero{text-align:center; padding:50px;}
+  .hero h1{font-size:70px; color:#001838; margin:0;}
+ .grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+  padding:20px 80px;
+}
+.card{
+  background:white;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  display:flex;
+  flex-direction:column;
+  height:300px; /* ثبت ارتفاع الكرت كلو */
+}
+.card img{
+  width:100%;
+  height:250px; /* ثبت ارتفاع الصورة */
+  object-fit:cover; /* دي بتقص الصورة عشان تملى بدون ما تتمط */
+  display:block;
+}
+.card .info{
+  height:50px;
+  display:flex;
+  align-items:center;
+  padding-left:10px;
+  background:white;
+}.card{
+  position:relative;
+  cursor:pointer;
+}
+.card img{
+  transition: 0.3s;
+}
+.card:hover img{
+  filter: brightness(40%); /* هنا بتغمض */
+}
+.card::after{
+  content: "شاهد التفاصيل →";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  opacity:0;
+  transition:0.3s;
+}
+.card:hover::after{
+  opacity:1;
+}
+
+  .tag{background:#8ec0e8; display:inline-block; padding:3px 10px; border-radius:12px; font-size:11px;}
+  
+</style>
+</head>
+<body>
+  <h1>Gallery</h1>
+  <p>A collection of Manchester City moments</p>
+  
+  <div style="margin-top:20px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+    <span style="background:#8ec0e8; padding:6px 14px; border-radius:20px; font-size:12px; font-weight:bold;">2024/25 SEASON</span>
+    <span style="background:#8ec0e8; padding:6px 14px; border-radius:20px; font-size:12px; font-weight:bold;">MATCHDAY</span>
+    <span style="background:#8ec0e8; padding:6px 14px; border-radius:20px; font-size:12px; font-weight:bold;">TRAINING</span>
+    <span style="background:#8ec0e8; padding:6px 14px; border-radius:20px; font-size:12px; font-weight:bold;">CELEBRATIONS</span>
+    <span style="background:#8ec0e8; padding:6px 14px; border-radius:20px; font-size:12px; font-weight:bold;">BEHIND THE SCENES</span>
+  </div>
+</div>
+
+<div style="display:flex; justify-content:space-between; align-items:center; padding:20px 80px 10px 80px; max-width:1200px; margin:auto;">
+  <h2 style="color:#001838; margin:0; font-size:28px;">Featured Gallery</h2>
+  <span style="color:gray; font-size:13px;">6 items • Updated Oct 2024</span>
+</div>
+<nav class="navbar">
+        <div class="container">
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">The team</a>
+                <a href="fixtures.html">Fixtures</a>
+                <a href="news.html">News</a>
+                <a href="about-us.html"><about-us>About Us</about-us></a>
+            </div>
+
+        </div>
+    </nav>
+
+<div class="grid">
+
+  <a href="team-details.html" style="text-decoration:none;">
+  <div class="card">
+    <img src="C:\Users\ojera\OneDrive\Desktop\mancity\manchester-city\images\images (5).jpg">
+    <div class="info"><b>Team</b></div>
+  </div>
+  </a>
+   <a href="trophies-details.html" style="text-decoration: none;">
+  <div class="card">
+    <img src="C:\Users\ojera\OneDrive\Desktop\mancity\manchester-city\images\images (6).jpg">
+    <div class="info"><b>Trophies</b></div>
+  </div>
+   </a>
+   <a href="staduum-details.html" style="text-decoration: none;">
+  <div class="card">
+    <img src="C:\Users\ojera\OneDrive\Desktop\mancity\manchester-city\images\images (1).jpg">
+    <div class="info"><b>Stadium</b></div>
+  </div>
+   </a>
+   <a href="fans-details.html" style="text-decoration: none;">
+  <div class="card">
+    <img src="C:\Users\ojera\OneDrive\Desktop\mancity\manchester-city\images\images (2).jpg">
+    <div class="info"><b>Fans</b></div>
+   </a>
+  </div>
+<a href="best moments.html" style="text-decoration: none;">
+  <div class="card">
+    <img src="C:\Users\ojera\OneDrive\Desktop\mancity\manchester-city\images\images (3).jpg">
+    <div class="info"><b>Best Moments</b></div>
+  </div>
+</a>
+</div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+>>>>>>> d4f0c08ae7b05eff656b92424a63d5c6a770c6c2
