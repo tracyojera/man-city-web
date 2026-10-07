@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etihad Stadium - Manchester City</title>
+<style>
+*{margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+body{background:#001838; color:white; overflow-x:hidden;}
+
+a.back{
+  color:#7fb5ff; text-decoration:none; font-weight:bold;
+  position:absolute; top:20px; left:20px; z-index:10;
+  background:rgba(0,0,0,0.6); padding:8px 15px; border-radius:20px;
+}
+
+/* السلايد المتحرك */
+.hero-slider {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background: #0a2342;
+}
+.slider-track {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slideRight 18s linear infinite;
+}
+.slider-track img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+}
+.hero-text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes slideRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* المحتوى الابيض */
+.content{
+  max-width:900px; 
+  margin:40px auto 30px;
+}
+.info{
+  display:grid; 
+  grid-template-columns:1fr 1fr; 
+  gap:20px; 
+  margin-top:20px;
+}
+.info div{
+  background:#eef4ff; 
+  padding:18px; 
+  border-radius:10px; 
+  text-align:center;
+}
+.info h3{font-size:24px; color:#0a2342;}
+.info p{color:#5a6a80; font-size:14px; margin-top:5px;}
+</style>
+</head>
+<body>
+
+<a href="gallery.html" class="back">← Back</a>
+
+<!-- الخلفية المتحركة يمين -->
+<div class="hero-slider">
+  <div class="slider-track">
+    <img src="images (17).jpg" alt="Etihad Stadium 1">
+    <img src="images (19).jpg" alt="Etihad Stadium 1">
+    <img src="images (21).jpg" alt="Etihad Stadium 2">
+    <img src="images (22).jpg" alt="Etihad Stadium 3">
+    <img src="images (23).jpg" alt="Etihad Stadium 1 duplicate for loop">
+  </div>
+  <div class="hero-text">ETIHAD STADIUM</div>
+</div>
+
+<!-- المعلومات -->
+<div class="content">
+  <h2>Home of Manchester City Since 2003</h2>
+  <p style="margin:15px 0; color:gray; line-height:1.6;">Capacity: 53,400 - Expanding to 62,000. Located in East Manchester. Known for incredible atmosphere and modern facilities.</p>
+  <div class="info">
+    <div><h3>53,400</h3><p>Capacity</p></div>
+    <div><h3>2003</h3><p>Opened</p></div>
+    <div><h3>£110M</h3><p>Built Cost</p></div>
+    <div><h3>115</h3><p>Acres Complex</p></div>
+  </div>
+</div>
+
+</body>
+</html>
